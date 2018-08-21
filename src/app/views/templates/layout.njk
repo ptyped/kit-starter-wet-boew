@@ -1,0 +1,35 @@
+{% extends 'templates/html5boilerplate.njk' %}
+
+{% block stylesheets %}
+    <!--[if lt IE 9]>
+        <link href="/public/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="/public/GCWeb/css/ie8-theme.min.css" />
+    <![endif]-->
+
+    <!--[if gte IE 9 | !IE ]><!-->
+        <link href="/public/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="/public/GCWeb/css/theme.min.css">
+    <!--<![endif]-->
+
+    <noscript>
+        <link rel="stylesheet" href="/public/wet-boew-cdn/css/noscript.min.css" />
+    </noscript>
+
+    {{ super() }}
+{% endblock %}
+
+{% block scripts %}
+    <script src="/public/wet-boew-cdn/js/jquery/2.1.4/jquery.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="/public/wet-boew-cdn/js/ie8-wet-boew2.js"></script>	
+    <![endif]-->
+
+    <!--[if gte IE 9 | !IE ]><!-->
+        <script src="/public/wet-boew-cdn/js/wet-boew.js"></script>
+    <!--<![endif]-->
+
+    <script src="/src/assets/vendor/wet-theme-gcweb/js/theme.js"></script>
+
+    {{ super() }}
+{% endblock %}

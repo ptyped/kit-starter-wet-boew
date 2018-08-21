@@ -1,0 +1,9 @@
+{
+  "name": "kit-starter-wet-boew",
+  "version": "1.0.0",
+  "description": "A starter template for @ptypes/kit for WET-BOEW",
+  "main": "index.js",
+  "author": "CDMACRAE <chris.macrae@canada.ca>",
+  "license": "MIT",
+  "private": true
+}
