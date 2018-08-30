@@ -1,8 +1,8 @@
-const express = require('express')
-const router = express.Router()
-
-/**
- * Put your routes here.
- */
-
-module.exports = router
+module.exports = function(router) {
+  /**
+   * Put your routes here.
+   */
+  
+  // Return any redirects
+  return {}
+}
